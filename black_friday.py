@@ -33,7 +33,37 @@ print(age.value_counts())
 
 #%%
 # take a look at the same column but with gender split
+# females
 age_female = friday.loc[friday["Gender"]=="F","Age"]
 print(age_female.value_counts())
+
+#%%
+#males
 age_male = friday.loc[friday["Gender"]=="M","Age"]
 print(age_male.value_counts())
+
+#%%
+# number of purchases made by females
+print(age_female.shape)
+
+#%%
+# number of purchases made by males
+print(age_male.shape)
+
+#%%
+# checking percentage of women
+tot_fem = float(age_female.shape[0])
+print(tot_fem)
+tot_mal = float(age_male.shape[0])
+print(tot_mal)
+tot_gen = tot_fem + tot_mal
+fem_perc = tot_fem/tot_gen*100
+print(fem_perc)
+
+#%%
+# checking percentage of men
+mal_perc = tot_mal/tot_gen*100
+print(mal_perc)
+
+#%%
+# it looks like 3 times more man than women made purchases during black friday 
