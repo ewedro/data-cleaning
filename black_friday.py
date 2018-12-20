@@ -66,4 +66,5 @@ mal_perc = tot_mal/tot_gen*100
 print(mal_perc)
 
 #%%
-# it looks like 3 times more man than women made purchases during black friday 
+# ## it looks like 3 times more man than women made purchases during black friday 
+
