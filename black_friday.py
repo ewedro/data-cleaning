@@ -1,5 +1,4 @@
-#%% 
-# file import
+#%%  Import file
 import pandas as pd  
 friday = pd.read_csv('~/pytong/data-cleaning/BlackFriday.csv')
 
